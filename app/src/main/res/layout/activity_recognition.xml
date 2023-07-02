@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".recognition">
+    <TextView
+        android:id="@+id/txtObj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OBJECT ANALYSIS"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+
+
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_below="@id/txtObj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgView"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#005bc5"
+        android:text="SELECT IMAGE"
+        android:id="@+id/selectBtn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectBtn"
+        android:backgroundTint="#005bc5"
+        android:text="CAPTURE"
+        android:id="@+id/captureBtn"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PREDICT"
+        android:layout_below="@id/captureBtn"
+        android:backgroundTint="#005bc5"
+        android:id="@+id/predictBtn"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:layout_below="@id/predictBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="RESULT :"/>
+
+</RelativeLayout>
